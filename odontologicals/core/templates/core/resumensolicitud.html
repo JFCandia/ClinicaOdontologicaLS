@@ -1,0 +1,71 @@
+{% extends 'core/base.html' %}
+
+
+{% block content %}
+<section class="agency_service_area bg_color">
+    <div class="container">
+        <div class="row mb_30">
+            <div class="col-lg-3 col-sm-12 titulo"></div>
+            <div class="col-lg-6 col-sm-12 titulo">
+                <div class="p_service_item agency_service_item pl_20 pr_70 contenedor2">
+                    <center>
+                        <h1 class="titulo3">Resumen de solicitud</h1>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="rta" rowspan="7">
+                                        <center><i class="far fa-clock fa-8x coloco"></i></center>
+                                    </td>
+                                    <td class="rtd">Rut solicitante:</td>
+                                    <td class="rtd">(Rut)</td>
+                                </tr>
+                                <tr>
+                                    <td class="rtd">Nombres:</td>
+                                    <td class="rtd">
+                                        <dd>(Nombres)</dd>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="rtd">Apellidos:</td>
+                                    <td class="rtd">
+                                        <dd>(Apellidos)</dd>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="rtd"><br>Especialidad:</td>
+                                    <td class="rtd"><br>
+                                        <dd>(Especialidad)</dd>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="rtd">Fecha:</td>
+                                    <td class="rtd">
+                                        <dd>(Fecha)</dd>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="rtd">Hora:</td>
+                                    <td class="rtd">
+                                        <dd>(Hora)</dd>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="rtd">Doctor:</td>
+                                    <td class="rtd">
+                                        <dd>(Doctor)</dd>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                    <div class="adere">
+                        <button type="button" class="btn btn-danger bb1">Cancelar</button>
+                        <button type="button" class="btn btn-info bb2">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 titulo"></div>
+        </div>
+    </div>
+</section>
+{% endblock %}

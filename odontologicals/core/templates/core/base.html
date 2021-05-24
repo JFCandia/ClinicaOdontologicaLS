@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odontologia Linda Sonrisa {% block title%}{% endblock %}</title>
+    <link rel="shortcut icon" href="{% static 'img/iconoDiente.png' %}" type="image/x-icon">
+    <img class="iclas" src="{% static 'img/breadcrumb/banner_bg.png' %}" alt="">
+    
+          <!-- Contenido requerido para Bootstrap y jQuery -->
+       <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="{% static 'img/iconoDiente.png' %}" type="image/x-icon">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!--icon font css-->
+    <link rel="stylesheet" href="{% static 'vendors/themify-icon/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/font-awesome/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/flaticon/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/animation/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/owl-carousel/assets/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/animation/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/magnify-pop/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/elagent/style.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/scroll/jquery.mCustomScrollbar.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+<body>
+    {% include 'core/plantillaBarraNavegacion.html' %}
+    {% block content %}
+        
+    {%  endblock %}
+    
+</body>
+{% block js %} 
+
+{% endblock %} 
+{% block footer %}
+<footer class="footer_area footer_area_four f_bg">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6">
+                    <div class="f_widget about-widget pl_40">
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">Casa Matriz</a></li>
+                            <li><a href="#">[Dirección]</a></li>
+                            <li><a href="#">[Teléfono] </a></li>
+                            <li><a href="#">[Horario]</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="f_widget about-widget pl_40">
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">Sucursal 1 </a></li>
+                            <li><a href="#">[Dirección]</a></li>
+                            <li><a href="#">[Teléfono] </a></li>
+                            <li><a href="#">[Horario]</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="f_widget about-widget">
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">Sucursal 2 </a></li>
+                            <li><a href="#">[Dirección]</a></li>
+                            <li><a href="#">[Teléfono] </a></li>
+                            <li><a href="#">[Horario]</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="f_widget about-widget">
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">Mesa de ayuda </a></li>
+                            <li><a href="#">[Dirección]</a></li>
+                            <li><a href="#">[Teléfono] </a></li>
+                            <li><a href="#">[Horario]</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="f_widget about-widget">
+                        <h3 class="f-title f_600 t_color4 f_size_18 mb_40">Redes sociales</h3>
+                        <ul class="social-network social-circle">
+                            <li><a style="background:#38529a;" href="#"><i class="ti-facebook"></i></a></li>
+                            <li><a style="background:#dc4863;" href="#"><i class="ti-instagram"></i></a></li>
+                            <li><a style="background:#1c9ceb;" href="#"><i class="ti-twitter-alt"></i></a></li>
+                            <li><a style="background:#ec4e1d;" href="#"><i class="ti-google"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+{% endblock %}
+</html>

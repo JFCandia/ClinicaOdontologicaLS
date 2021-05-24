@@ -1,0 +1,112 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<section class="agency_service_area bg_color">
+    <div class="container">
+        <center>
+            <h1 class="titulo">Formulario de registro para nuevo usuario</h1>
+            <h4 class="titulo3"><u>Información básica</u></h4>
+        </center>
+        <div class="row mb_30">
+            <div class="col-lg-4 col-sm-6">
+                <div class="p_service_item agency_service_item pr_70"></div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 contenedor3">
+                <div class="p_service_item agency_service_item pl_20 pr_70">
+                    <form action="#" method="get">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="titulo3">RUT (ej. 11111111-1)</label>
+                            <input type="number" name="rut" class="form-control" id="rut">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="titulo3">Nombres</label>
+                            <input type="text" name="nombres" class="form-control" id="nombres">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="titulo3">Apellidos</label>
+                            <input type="text" name="apellidos" class="form-control" id="apellidos">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="titulo3">Dirección</label>
+                            <input type="text" name="direccion" class="form-control" id="direccion">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1" class="titulo3">Region</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Region 1</option>
+                                <option>Region 2</option>
+                                <option>Region 3</option>
+                                <option>Region 4</option>
+                                <option>Region 5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect2" class="titulo3">Comuna</label>
+                            <select class="form-control" id="exampleFormControlSelect2">
+                                <option>Comuna 1</option>
+                                <option>Comuna 2</option>
+                                <option>Comuna 3</option>
+                                <option>Comuna 4</option>
+                                <option>Comuna 5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="titulo3">Teléfono</label>
+                            <input type="tel" name="telefono" class="form-control" id="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="titulo3">Correo electrónico</label>
+                            <input type="email" name="correo" class="form-control" id="correo">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="titulo3">Contraseña</label>
+                            <input type="password" name="password" class="form-control" id="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1" class="titulo3">Repetir contraseña</label>
+                            <input type="password" name="password2" class="form-control" id="password2">
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="p_service_item agency_service_item pl_20 pr_70"></div>
+            </div>
+        </div><br><br>
+        <center>
+            <h5 class="titulo3">Información Económica</h5><u class="titulo3">Esto tiene como objetivo ayudarle a
+                encontrar beneficios</u>
+        </center>
+        <div class="row mb_30">
+            <div class="col-lg-4 col-sm-6">
+                <div class="p_service_item agency_service_item pr_70"></div>
+            </div>
+            <div class="col-lg-4 col-sm-6 contenedor3">
+                <div class="p_service_item agency_service_item pl_20 pr_70">
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect3" class="titulo3">Rango de ingresos
+                            mensuales</label>
+                        <select class="form-control" id="exampleFormControlSelect3">
+                            <option>Rango 1</option>
+                            <option>Rango 2</option>
+                            <option>Rango 3</option>
+                            <option>Rango 4</option>
+                            <option>Rango 5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="p_service_item agency_service_item pl_20 pr_70"></div>
+            </div>
+        </div><br><br>
+        <center><input class="btn btn-info" type="submit" value="Entrar"></form>
+        </center>
+    </div>
+</section>
+ 
+
+{% endblock %}

@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+    <body>
+         <!-- Contenido requerido para Bootstrap y jQuery -->
+       <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!--icon font css-->
+    <link rel="stylesheet" href="{% static 'vendors/themify-icon/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/font-awesome/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/flaticon/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/animation/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/owl-carousel/assets/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/animation/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/magnify-pop/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/elagent/style.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/scroll/jquery.mCustomScrollbar.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+        
+        <!-- CSS propio -->
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+        
+    <!-- En caso de necesitar JS personalizado, usar este bloque -->
+
+    <!-- Usar este bloque para personalizar cada titulo de las ventanas -->
+    <title>Odontologia Linda Sonrisa {% block title%}{% endblock %}</title>
+    <body>
+        <!-- NAVBAR -->
+        <div class="body_wrapper">
+
+            <header class="header_area">
+                <img class="iclas" src="{% static 'img/breadcrumb/banner_bg.png' %}" alt="">
+                <nav class="navbar navbar-expand-lg menu_one menu_four rna">
+                    <div class="container">
+    
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="menu_toggle">
+                                <span class="hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                                <span class="hamburger-cross">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </span>
+                        </button>
+    
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                            <ul class="navbar-nav menu w_menu ml-auto mr-auto">
+                                <li class="nav-item dropdown submenu mega_menu mega_menu_two">
+                                    <a class="nav-link dropdown-toggle" href="{% url 'inicio' %}">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown submenu mega_menu mega_menu_two">
+                                    <a class="nav-link dropdown-toggle" href="{% url 'tomarhora' %}" >Tomar Hora</a>
+                                </li>
+                            </ul>
+    
+                            <ul class="navbar-nav menu w_menu ml-auto mr-auto">
+                                <li class="nav-item dropdown submenu mega_menu mega_menu_two">
+                                    <a class="nav-link dropdown-toggle" href="{% url 'login' %}" >Iniciar Sesión</a>
+                                </li>
+                                <li class="nav-item dropdown submenu mega_menu mega_menu_two">
+                                    <a class="nav-link dropdown-toggle" href="{% url 'registro' %}" >Registrarse</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+    </body>
+    {% block js %} 
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/propper.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'vendors/wow/wow.min.js' %}"></script>
+<script src="{% static 'vendors/sckroller/jquery.parallax-scroll.js' %}"></script>
+<script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'vendors/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'vendors/isotope/isotope-min.js' %}"></script>
+<script src="{% static 'vendors/magnify-pop/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'vendors/scroll/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'vendors/slick/slick.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %} 
+</html>

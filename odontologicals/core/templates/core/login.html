@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="agency_service_area bg_color">
+    <div class="container">
+        <div class="row mb_30">
+            <div class="col-lg-4 col-sm-6">
+                <div class="p_service_item agency_service_item pr_70"></div>
+            </div>
+            <div class="col-lg-4 col-sm-6 contenedor">
+                <div class="p_service_item agency_service_item pl_20 pr_70">
+                    <center> <img src="{% static 'img/user.png' %}" class="img-fluid" />
+                        <form action="#" method="get">
+                            <p class="pa">RUT (ej. 11111111-1)<br> <input class="form-control input-sm ib"
+                                    type="number" name="rut"></p>
+                            <p class="pa">Contraseña<br> <input class="form-control input-sm ib" type="password"
+                                    name="contrasena"></p>
+                            <br><input class="btn btn-info" type="submit" value="Entrar"><br><a class="ac"
+                                href="#">¿No tienes cuenta? Regístrate</a>
+                        </form>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="p_service_item agency_service_item pl_20 pr_70"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
