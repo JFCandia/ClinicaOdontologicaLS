@@ -8,6 +8,7 @@
 
 from django.db import models
 
+
 class Boleta(models.Model):
     id_boleta = models.BigIntegerField(primary_key=True)
     fecha = models.DateField()
@@ -19,6 +20,8 @@ class Boleta(models.Model):
     class Meta:
         managed = False
         db_table = 'boleta'
+
+        
 
 class Cargo(models.Model):
     id_cargo = models.BigIntegerField(primary_key=True)
@@ -39,7 +42,7 @@ class Categoria(models.Model):
 class Cliente(models.Model):
     id_cliente = models.BigIntegerField(primary_key=True)
     rut = models.BigIntegerField()
-    dv = models.BigIntegerField()
+    dv = models.CharField(max_length=1)
     nombres = models.CharField(max_length=100)
     apellidos = models.CharField(max_length=100)
     usuario = models.CharField(max_length=8)
@@ -129,9 +132,11 @@ class Especialista(models.Model):
 
 class Horario(models.Model):
     id_horario = models.BigIntegerField(primary_key=True)
-    dia = models.CharField(max_length=2)
+    dia = models.BigIntegerField()
     hora_ini = models.CharField(max_length=5)
     hora_fin = models.CharField(max_length=5)
+    mes = models.BigIntegerField()
+    anio = models.BigIntegerField()
     
     class Meta:
         managed = False

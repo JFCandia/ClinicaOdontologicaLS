@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+
 
     <body>
          <!-- Contenido requerido para Bootstrap y jQuery -->
@@ -34,7 +34,6 @@
     <body>
         <!-- NAVBAR -->
         <div class="body_wrapper">
-
             <header class="header_area">
                 <img class="iclas" src="{% static 'img/breadcrumb/banner_bg.png' %}" alt="">
                 <nav class="navbar navbar-expand-lg menu_one menu_four rna">
@@ -42,6 +41,7 @@
     
                         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span class="menu_toggle">
                                 <span class="hamburger">
@@ -58,27 +58,48 @@
     
                         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
                             <ul class="navbar-nav menu w_menu ml-auto mr-auto">
+                                 
                                 <li class="nav-item dropdown submenu mega_menu mega_menu_two">
                                     <a class="nav-link dropdown-toggle" href="{% url 'inicio' %}">Inicio</a>
                                 </li>
+                          
+                                {% if not user.is_authenticated %}             
                                 <li class="nav-item dropdown submenu mega_menu mega_menu_two">
                                     <a class="nav-link dropdown-toggle" href="{% url 'tomarhora' %}" >Tomar Hora</a>
                                 </li>
+                                {% endif %}
+                                
                             </ul>
-    
+                                 
                             <ul class="navbar-nav menu w_menu ml-auto mr-auto">
                                 <li class="nav-item dropdown submenu mega_menu mega_menu_two">
                                     <a class="nav-link dropdown-toggle" href="{% url 'login' %}" >Iniciar Sesión</a>
                                 </li>
+                                {% if user.is_authenticated %} 
                                 <li class="nav-item dropdown submenu mega_menu mega_menu_two">
                                     <a class="nav-link dropdown-toggle" href="{% url 'registro' %}" >Registrarse</a>
                                 </li>
-                            </ul>
+                                {% endif %}
+                            </ul>  
+                            
+                            <ul class="navbar-nav menu w_menu ml-auto mr-auto">
+                        
+                                <li class="nav-item dropdown submenu mega_menu mega_menu_two">
+                                     <a class="titulo" href="#get-app">Bienvenid@, (usuario)</a>
+                                </li>
+                               
+                                <li class="nav-item dropdown submenu mega_menu mega_menu_two">
+                                        <a class="titulo" href="{% url 'inicio' %}">Salir</a>
+                                </li>
+                          
+                            </ul> 
+                                
                         </div>
                     </div>
                 </nav>
             </header>
-    </body>
+        </div>    
+</body>
     {% block js %} 
 <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
 <script src="{% static 'js/propper.js' %}"></script>
@@ -94,4 +115,3 @@
 <script src="{% static 'vendors/slick/slick.js' %}"></script>
 <script src="{% static 'js/main.js' %}"></script>
 {% endblock %} 
-</html>

@@ -1,5 +1,5 @@
 from django.urls import path
-from core.views import login, inicio, horacancelada, horaexitosa, proxatenciones, registro, resumensolicitud, tomarhora, vermishoras
+from core.views import login, inicio, horacancelada, horaexitosa, proxatenciones, registro, resumensolicitud, tomarhora, vermishoras 
 
 
 

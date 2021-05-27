@@ -1,11 +1,9 @@
 from django.shortcuts import render
+from django.db import connection
 
-# Create your views here.
-def index(request):
-    return render(request,'core/base.html',{})
-
+       
 def login(request):
-    return render(request,'core/login.html',{})  
+    return render(request,'core/login.html',{})
 
 def inicio(request):
     return render(request,'core/inicio.html',{}) 

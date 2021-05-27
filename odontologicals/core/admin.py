@@ -8,6 +8,9 @@ from .models import Rol, RolPermiso, Rubro, SitEconomica, Sucursal, TipoPago
 
 # Register your models here.
 
+
+
+
 admin.site.register(Boleta)
 admin.site.register(Cargo)
 admin.site.register(Categoria)
